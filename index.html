@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RSBB</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: black;
+            overflow: hidden;
+        }
+        .glitch {
+            color: white;
+            font-size: 4em;
+            font-family: 'Courier New', Courier, monospace;
+            position: relative;
+        }
+        .glitch::before, .glitch::after {
+            content: 'GLITCH';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: black;
+            clip: rect(0, 900px, 0, 0);
+        }
+        .glitch::before {
+            left: 2px;
+            text-shadow: -2px 0 red;
+            animation: glitch 2s infinite linear alternate-reverse;
+        }
+        .glitch::after {
+            left: -2px;
+            text-shadow: -2px 0 blue;
+            animation: glitch 2s infinite linear alternate-reverse;
+            animation-delay: 1s;
+        }
+        @keyframes glitch {
+            0% {
+                clip: rect(44px, 450px, 56px, 0);
+                transform: skew(0.3deg);
+            }
+            10% {
+                clip: rect(85px, 9999px, 0, 0);
+                transform: skew(0.6deg);
+            }
+            20% {
+                clip: rect(20px, 450px, 60px, 0);
+                transform: skew(0.2deg);
+            }
+            30% {
+                clip: rect(20px, 9999px, 30px, 0);
+                transform: skew(0.4deg);
+            }
+            40% {
+                clip: rect(70px, 9999px, 100px, 0);
+                transform: skew(0.3deg);
+            }
+            50% {
+                clip: rect(40px, 9999px, 30px, 0);
+                transform: skew(0.1deg);
+            }
+            60% {
+                clip: rect(60px, 450px, 60px, 0);
+                transform: skew(0.5deg);
+            }
+            70% {
+                clip: rect(10px, 9999px, 50px, 0);
+                transform: skew(0.6deg);
+            }
+            80% {
+                clip: rect(40px, 450px, 40px, 0);
+                transform: skew(0.2deg);
+            }
+            90% {
+                clip: rect(30px, 9999px, 50px, 0);
+                transform: skew(0.4deg);
+            }
+            100% {
+                clip: rect(50px, 9999px, 30px, 0);
+                transform: skew(0.3deg);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="glitch">OP:BB</div>
+</body>
+</html>
