@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="robots" content="noindex, nofollow">
@@ -11,14 +11,12 @@
             width: 100%;
             height: 100%;
             font-family: Arial, Helvetica, sans-serif;
-            background-color: #121212;
-            color: #ffffff;
         }
         #dialogText {
-            color: #ffffff;
-            background-color: #333333;
+            color: black;
+            background-color: #CCCCCC;
         }
-        
+
         #dialogWrap {
             position: absolute;
             top: 0;
@@ -26,15 +24,15 @@
             width: 100%;
             height: 100%;
             display: table;
-            background-color: #1e1e1e;
+            background-color: #222222;
         }
-        
+
         #dialogWrapCell {
             display: table-cell;
             text-align: center;
             vertical-align: middle;
         }
-        
+
         #mainDialog {
             max-width: 400px;
             margin: 5px;
@@ -62,39 +60,36 @@
             height: 40px;
             font-size: 30px;
             background-color: #555555;
-            color: #ffffff;
-            border: 1px solid #666666;
-            border-radius: 5px;
-            padding: 5px;
+            color: white;
+            border: solid #666666 1px;
         }
-        
+
         #messageWrapper {
             float: left;
             vertical-align: middle;
             line-height: 30px;
         }
-        
+
         .notifyText {
             display: none;
         }
-        
+
         #invalidPass {
-            color: #ff4444;
+            color: red;
         }
-        
+
         #success {
-            color: #44ff44;
+            color: green;
         }
-        
+
         #submitPass {
             font-size: 20px;
             border-radius: 5px;
             background-color: #555555;
-            color: #ffffff;
             border: solid gray 1px;
             float: right;
             cursor: pointer;
-            padding: 5px 10px;
+            color: white;
         }
         #contentFrame {
             position: absolute;
@@ -114,31 +109,31 @@
             font-size: 0.8em;
         }
         #attribution, #attribution a {
-            color: #aaaaaa;
+            color: #999;
         }
         .error {
             display: none;
-            color: #ff4444;
+            color: red;
         }
     </style>
-  </head>
-  <body>
+</head>
+<body>
     <iframe id="contentFrame" frameBorder="0" allowfullscreen></iframe>
     <div id="dialogWrap">
         <div id="dialogWrapCell">
             <div id="mainDialog">
-                <div id="dialogText">001928A DA89127D 029E80DS RUH32489U</div>
+                <div id="dialogText">8917497129871719870</div>
                 <div id="passArea">
-                    <p id="passwordPrompt">IUH8AA9E2 UDF981D 182D8911 DJ192DFI</p>
+                    <p id="passwordPrompt">----------</p>
                     <input id="pass" type="password" name="pass" autofocus>
                     <div>
                         <span id="messageWrapper">
                             <span id="invalidPass" class="error">Declined</span>
                             <span id="trycatcherror" class="error">Declined</span>
-                            <span id="success" class="notifyText">Accepted</span>
+                            <span id="success" class="notifyText">Success!</span>
                             &nbsp;
                         </span>
-                        <button id="submitPass" type="button">OP:BB</button>
+                        <button id="submitPass" type="button">Submit</button>
                         <div style="clear: both;"></div>
                     </div>
                 </div>
@@ -155,15 +150,10 @@
             </div>
         </div>
     </div>
-    <div id="attribution">
-        <a href="https://rsbb.xyz/">Give Up</a>
-    </div>
     <script>
     (function() {
 
-        var pl = "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";
+        var pl = "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";
         
         var submitPass = document.getElementById('submitPass');
         var passEl = document.getElementById('pass');
@@ -306,5 +296,5 @@ V/2JG6z1yRg1C1+uSbTxMi1ns9cOr/IoMtfIIO6gckoFVIftmM99T8slDaqwhopzB2BUQayTYx+MGTBR
         }
     })();
     </script>
-  </body>
+</body>
 </html>
